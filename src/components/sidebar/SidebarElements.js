@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Link as LinkScroll } from 'react-scroll';
 import { FaTimes } from 'react-icons/fa';
+import { flexContainer, paddingForContainer } from '../Navbar/NavbarElements'
 
 export const SidebarContainer = styled.aside`
 position:fixed;
@@ -10,11 +11,10 @@ height:100%;
 display:grid;
 align-items:center;
 top:0;
-left:0;
-transition: 0.3s ease-in-out;
+transition: .3s ease-in-out;
 background-color: rgba(0,0,0,0.90);;
 opacity:${({isOpen}) => (isOpen ? '100%' : '0')};
-top:${({isOpen}) => (isOpen ? '0' : '-100%')};
+right:${({isOpen}) => (isOpen ? '0' : '-100%')};
 `
 export const Icon = styled.div`
 position:absolute;
@@ -27,10 +27,14 @@ outline:none;
 
 export const CloseIcon = styled(FaTimes)`
 color: #fff;
+&:hover{
+    transform: rotate(45deg);
+    transition: .15s ease-in .05s;
+}
 `
 
 export const SidebarWrapper = styled.div`
-padding: 0 2rem;
+${paddingForContainer}
 `
 
 export const SidebarMenu = styled.ul`
@@ -51,7 +55,6 @@ align-items: center;
 `
 export const SidebarLink = styled(LinkScroll)`
 color:#fff;
-
 width: 100%;
 padding: .25rem 0rem .25rem 0rem;
 cursor: pointer;
@@ -63,5 +66,6 @@ cursor: pointer;
 `
 
 export const SidebarBtn = styled.div`
+${flexContainer}
 text-align: center;
 `

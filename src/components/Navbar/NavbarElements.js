@@ -11,6 +11,9 @@ align-items: center;
 export const spaceBetween = css`
 justify-content: space-between;
 `
+export const paddingForContainer = css`
+padding: 0 30px;
+`
 
 
 export const Nav = styled.nav`
@@ -29,19 +32,16 @@ z-index:10;
 export const NavbarContainer = styled.div`
 ${flexContainer};
 ${spaceBetween};
+${paddingForContainer}
 width: 100%;
 max-width: 1100px;
 height: 80px;
 z-index:1;
-padding: 0 24px;
 `
 
 export const NavLogoRoute = styled(LinkRouter)`
 color: white;
-display: flex;
-justify-self:flex-start;
-align-items: center;
-cursor:pointer;
+cursor: pointer;
 font-size: 1.6rem;
 margin-left:24px;
 font-weight: bold;
@@ -65,11 +65,8 @@ display: none;
 `
 
 export const NavMenu = styled.ul`
-display: flex;
-align-items:center;
+${flexContainer}
 list-style: none;
-text-align:center;
-margin-right: -22px;
 @media (max-width: 768px){
     display:none;
 }
@@ -79,9 +76,8 @@ export const NavItem = styled.li`
 height:80px;
 `
 export const NavLink = styled(LinkScroll)`
+${flexContainer}
 color: #fff;
-display:flex;
-align-items:center;
 text-decoration:none;
 padding: 0 1rem;
 height: 100%;
