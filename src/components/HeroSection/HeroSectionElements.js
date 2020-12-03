@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { flexContainer, paddingForContainer } from '../Navbar/NavbarElements'
+import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 
 export const HeroContainer = styled.div`
 ${flexContainer};
@@ -31,15 +32,48 @@ background-color: #232a34;
 
 export const HeroContent = styled.div`
 font-size:1rem;
-z-index:2;
-text-align:center;
+z-index:3;
+position:absolute;
+padding: 8px 24px;
+${flexContainer};
+flex-direction:column;
 `
 export const HeroH1 = styled.h1`
 color: white;
 font-family:-apple-system,  sans-serif;
+font-size:48px;
+text-align:center;
+
+@media (max-width: 768px){
+    font-size:40px;
+}
+@media (max-width: 480px){
+    font-size:32px;
+}
+
 `
 
 export const HeroP = styled.p`
-font-size:1rem;
-margin-top:40px;
+font-size:24px;
+margin-top:48px;
+max-width: 600px;
+@media (max-width: 480px){
+    font-size:18px;
+}
+`
+
+
+export const HeroBtnWrapper = styled.div`
+${flexContainer};
+margin-top:32px;
+`
+
+export const ArrowForward = styled(MdArrowForward)`
+margin-left: 8px;
+font-size: 20px;
+`
+
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+margin-left: 8px;
+font-size: 20px;
 `
