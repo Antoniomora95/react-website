@@ -71,9 +71,9 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
     max-width: 480px;
     margin-bottom: 35px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
-    color: ${({$darkText})=>( $darkText ? '#010606': '#fff')};
+    color: ${({$lightText})=>( $lightText ? '#f7f8fa': '#010606')};
 `
 export const BtnWrap = styled.div`
 text-align: left;

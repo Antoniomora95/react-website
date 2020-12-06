@@ -39,8 +39,9 @@ export const HeroSection = () => {
                     onMouseEnter={onHover}
                     onMouseLeave={onHover}
                     $primary={true}
-                    $darkColor= {false}
-                    $big= {true} 
+                    $primaryColorBtn= {false}
+                    $big= {true}
+                    $bgDark={ true }
                      >
                         Get started { hover ? <ArrowForward/> : <ArrowRight
                         />}

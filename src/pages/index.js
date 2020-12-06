@@ -17,8 +17,6 @@ export const Home = () => {
             <Navbar toggle = { toggle }/>
             <HeroSection/>
             <InfoSection {...homeObj}/>
-            <InfoSection {...homeObj2}/>
-            <InfoSection {...homeObj3}/>
 
         </>
     )

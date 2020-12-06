@@ -8,8 +8,8 @@ import team  from '../../images/team.svg';
 
 export const homeObj = {
     id:'about',
-    lightBg: true,
-    lightText: false,
+    lightBg: false,
+    lightText: true,
     lightTextDesc: true,
     topLine: 'Premium Account',
     headLine: 'Unlimited transactions, and functionalities',
@@ -18,9 +18,8 @@ export const homeObj = {
     imgStart: false,
     img: developer,
     alt:'front dev',
-    darkColorBtn: false,
-    primaryButton: false,
-    darkText: true
+    primaryColorBtn: true,
+    primaryButton: false
 }
 
 export const homeObj2 = {
@@ -35,9 +34,8 @@ export const homeObj2 = {
     imgStart: true,
     img: developer,
     alt:'front dev',
-    darkColorBtn: false,
+    primaryColorBtn: true,
     primaryButton: false,
-    darkText: true
 }
 export const homeObj3 = {
     id:'about',
@@ -51,7 +49,7 @@ export const homeObj3 = {
     imgStart: false,
     img: developer,
     alt:'front dev',
-    darkColorBtn: false,
-    primaryButton: false,
+    primaryColorBtn: false,
+    primaryButton: true,
     darkText: true
 }
