@@ -21,12 +21,16 @@ export const InfoWrapper = styled.div`
 
 export const InfoRow = styled.div`
     display:grid;
+    // minmax auto = enough space to fit the content
+    // minmax 1fr = basically it will take all the availavle width -->100%
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
+    // 'div1 div 2' this mean a row with two elements inside
+    // check how in >768px you have two divs per row, less than 768 you put only 1 div per row 'col' 'col' 
     grid-template-areas: ${({$imgStart}) => ($imgStart ? `'col2 col1'`: `'col1 col2'`)};
 
     @media(max-width:768px){
-        grid-template-areas: ${({$imgStart}) => ($imgStart ? `'col1' 'col2'`: `'col1 col1' 'col2 col2'`)}
+        grid-template-areas: ${({$imgStart}) => ($imgStart ? `'col2' 'col1'`: `'col1' 'col2'`)}
     }
 `
 

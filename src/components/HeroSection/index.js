@@ -27,10 +27,10 @@ export const HeroSection = () => {
                 <VideoBg autoPlay loop muted src={video} type='video/mp4'></VideoBg>
             </HeroBg>
             <HeroContent>
-                <HeroH1>Hi there, this is Antonio</HeroH1>
+                <HeroH1>Hi, this is Antonio</HeroH1>
                 <HeroP>
-                    A frontend engineer experienced in react js and
-                    angular, signup today and get a super gift for christmas.
+                    A self-taught developer focused on web technologies.
+                I enjoy working with Javascript either in frontend or backend applications.
 
                 </HeroP>
                 <HeroBtnWrapper>
@@ -43,7 +43,7 @@ export const HeroSection = () => {
                     $big= {true}
                     $bgDark={ true }
                      >
-                        Get started { hover ? <ArrowForward/> : <ArrowRight
+                        Contact { hover ? <ArrowForward/> : <ArrowRight
                         />}
                     </Button>
                 </HeroBtnWrapper>

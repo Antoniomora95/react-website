@@ -58,8 +58,6 @@ ${flexContainer};
 flex-direction:column;
 `
 export const HeroH1 = styled.h1`
-color: white;
-font-family:-apple-system,  sans-serif;
 font-size:48px;
 text-align:center;
 
@@ -76,6 +74,7 @@ export const HeroP = styled.p`
 font-size:24px;
 margin-top:48px;
 max-width: 600px;
+line-height:35px;
 @media (max-width: 480px){
     font-size:18px;
 }
