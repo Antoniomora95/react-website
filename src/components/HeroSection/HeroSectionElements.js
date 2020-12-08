@@ -111,7 +111,7 @@ export const ImgProfile = styled(Img)`
         transition-property: transform;
         transition-duration: 1.5s;
         transition-timing-function: linear;
-        transition-delay: .2s
+        transition-delay: .2s;
     }
 `
 /*
