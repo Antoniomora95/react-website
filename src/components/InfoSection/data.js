@@ -4,8 +4,12 @@ import frameworks  from '../../images/frameworks.svg';
 import freelancer  from '../../images/freelancer-ok.svg';
 import mobile  from '../../images/mobile.svg';
 import team  from '../../images/team.svg';
+import profile from '../../images/profile.jpg'
 
-
+export const heroInfo = {
+    img: profile,
+    alt:'antonio'
+}
 export const homeObj = {
     id:'about',
     lightBg: false,

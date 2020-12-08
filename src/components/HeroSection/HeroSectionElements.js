@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { flexContainer, paddingForContainer } from '../Navbar/NavbarElements'
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
-
+import { Img, ImgWrap } from '../InfoSection/InfoElements'
 export const HeroContainer = styled.div`
 ${flexContainer};
 ${paddingForContainer};
@@ -57,6 +57,7 @@ padding: 8px 24px;
 ${flexContainer};
 flex-direction:column;
 `
+
 export const HeroH1 = styled.h1`
 font-size:48px;
 text-align:center;
@@ -95,3 +96,28 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 margin-left: 8px;
 font-size: 20px;
 `
+export const ImgWrapProfile = styled(ImgWrap)`
+    margin:auto;
+    max-width:400px;
+    overflow: hidden;
+    border-radius: 5%;
+`
+
+export const ImgProfile = styled(Img)`
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+        //transition: transform 2s ease-in-out .2s;
+        transition-property: transform;
+        transition-duration: 1.5s;
+        transition-timing-function: linear;
+        transition-delay: .2s
+    }
+`
+/*
+The transition-property
+specifies the CSS property
+where the transition will be applied.
+You may apply a transition to an individual
+property (e.g., background-color or tranform)
+or to all properties in the rule-set (i.e., all). */
