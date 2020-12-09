@@ -25,10 +25,10 @@ const Navbar = ({ toggle }) => {
                         <NavLink to='about'>About</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to='discover'>Discover</NavLink>
+                        <NavLink to='technologies'>Technologies</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to='services'>Services</NavLink>
+                        <NavLink to='experience'>Experience</NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink to='signup'>Sign Up</NavLink>

@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Sidebar from '../components/sidebar';
 import { InfoSection } from '../components/InfoSection/index'
 import { homeObj, homeObj2, homeObj3, heroInfo } from '../components/InfoSection/data';
+import { Services } from '../components/Services';
 
 export const Home = () => {
     const [isOpen, setIsOpen ] = useState(false);
@@ -18,8 +19,7 @@ export const Home = () => {
             <HeroSection {...heroInfo}/>
             <InfoSection {...homeObj}/>
             <InfoSection {...homeObj2}/>
-            <InfoSection {...homeObj3}/>
-
+            <Services></Services>
 
         </>
     )

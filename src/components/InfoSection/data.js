@@ -10,23 +10,8 @@ export const heroInfo = {
     img: profile,
     alt:'antonio'
 }
-export const homeObj = {
-    id:'about',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
-    topLine: 'Premium Account',
-    headLine: 'Unlimited transactions, and functionalities',
-    description:'Get access to our service that is leading the freelancing market, our exclusive model is exactly what you want',
-    buttonLabel:'Get started',
-    imgStart: false,
-    img: developer,
-    alt:'front dev',
-    primaryColorBtn: true,
-    primaryButton: false
-}
 
-export const homeObj2 = {
+export const homeObj = {
     id:'about',
     lightBg: false,
     lightText: true,
@@ -41,8 +26,8 @@ export const homeObj2 = {
     primaryColorBtn: true,
     primaryButton: false,
 }
-export const homeObj3 = {
-    id:'about',
+export const homeObj2 = {
+    id:'experience',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
@@ -56,4 +41,20 @@ export const homeObj3 = {
     primaryColorBtn: false,
     primaryButton: true,
     darkText: true
+}
+
+export const homeObj3 = {
+    id:'about',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Premium Account',
+    headLine: 'Unlimited transactions, and functionalities',
+    description:'Get access to our service that is leading the freelancing market, our exclusive model is exactly what you want',
+    buttonLabel:'Get started',
+    imgStart: false,
+    img: developer,
+    alt:'front dev',
+    primaryColorBtn: true,
+    primaryButton: false
 }
