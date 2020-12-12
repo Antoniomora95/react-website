@@ -1,33 +1,18 @@
 import developer  from '../../images/developer.svg';
-import database  from '../../images/database.svg';
-import frameworks  from '../../images/frameworks.svg';
+import back_database  from '../../images/database.svg';
+import version  from '../../images/version-control.svg';
 import freelancer  from '../../images/freelancer-ok.svg';
 import mobile  from '../../images/mobile.svg';
-import team  from '../../images/team.svg';
+import frontend  from '../../images/frontend-dev.svg';
 import profile from '../../images/profile.jpg'
 
 export const heroInfo = {
     img: profile,
     alt:'antonio'
 }
-
-export const homeObj = {
-    id:'about',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'New technologies',
-    headLine: 'The market is always evolving',
-    description:'Antonio is a engineer who is always learning new stuff, stay tuned for new updates',
-    buttonLabel:'Check my github',
-    imgStart: true,
-    img: frameworks,
-    alt:'technologies',
-    primaryColorBtn: true,
-    primaryButton: false,
-}
 export const homeObj2 = {
-    id:'experience',
+    // this will be definetely to show who am i, talking about experience
+    id:'about',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
@@ -43,18 +28,46 @@ export const homeObj2 = {
     darkText: true
 }
 
-export const homeObj3 = {
-    id:'about',
+export const homeObj = {
+    id:'mycode',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'My github',
+    headLine: 'Fell free to check it out',
+    description:'Antonio is a engineer who enjoys writing javascript code, and other web technologies as well.',
+    buttonLabel:'Check my github',
+    imgStart: false,
+    img: version,
+    alt:'my github',
+    primaryColorBtn: false,
+    primaryButton: true,
+}
+
+
+export const ServicesObj = {
+    id:'experience',
     lightBg: true,
     lightText: false,
-    lightTextDesc: false,
-    topLine: 'Premium Account',
-    headLine: 'Unlimited transactions, and functionalities',
-    description:'Get access to our service that is leading the freelancing market, our exclusive model is exactly what you want',
-    buttonLabel:'Get started',
-    imgStart: false,
-    img: developer,
-    alt:'front dev',
-    primaryColorBtn: true,
-    primaryButton: false
+    titleSection: 'My experience',
+    cards: [
+        {
+            icon: back_database,
+            iconAlt: 'backend dev',
+            title: 'Frontend development',
+            paragraphText: 'Nearly 2 years working with Angular, JS ES6+, Typescript, CSS flexbox, grid, React (Hooks, router, styled components)'
+        },
+        {
+            icon: frontend,
+            iconAlt: 'frontend dev',
+            title: 'Backend development',
+            paragraphText: 'Experience in the develop of restful APIS using Node, express and MongoDB'
+        },
+        {
+            icon: mobile,
+            iconAlt: 'hybrid apps',
+            title: 'Hybrid Apps development',
+            paragraphText: 'Last year I worked in the develop of 2 mobile Apps using Ionic and Angular'
+        }
+    ]
 }

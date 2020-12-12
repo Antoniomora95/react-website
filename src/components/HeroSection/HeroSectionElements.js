@@ -8,7 +8,8 @@ ${paddingForContainer};
 background-color: #0c0c0c;
 position: relative;
 z-index:1;
-height:800px;
+height:auto;
+min-height: 800px;
 :before{
     content: '';
     position: absolute;

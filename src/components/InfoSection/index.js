@@ -28,7 +28,6 @@ export const InfoSection = ({
     buttonLabel,
     img,
     alt }) => {
-        console.log(primaryColorBtn);
     return (
         <InfoContainer id={id} $lightBg={lightBg}>
             <InfoWrapper>

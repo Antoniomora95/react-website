@@ -3,7 +3,7 @@ import { HeroSection } from '../components/HeroSection';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/sidebar';
 import { InfoSection } from '../components/InfoSection/index'
-import { homeObj, homeObj2, homeObj3, heroInfo } from '../components/InfoSection/data';
+import { homeObj, homeObj2, heroInfo, ServicesObj } from '../components/InfoSection/data';
 import { Services } from '../components/Services';
 
 export const Home = () => {
@@ -17,9 +17,9 @@ export const Home = () => {
             <Sidebar isOpen = { isOpen }  toggle = { toggle }/>
             <Navbar toggle = { toggle }/>
             <HeroSection {...heroInfo}/>
-            <InfoSection {...homeObj}/>
             <InfoSection {...homeObj2}/>
-            <Services></Services>
+            <InfoSection {...homeObj}/>
+            <Services {...ServicesObj}></Services>
 
         </>
     )

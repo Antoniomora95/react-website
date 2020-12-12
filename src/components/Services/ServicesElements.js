@@ -1,11 +1,12 @@
 import styled from 'styled-components';
-import { flexContainer } from '../Navbar/NavbarElements';
+import { blackColor, flexContainer } from '../Navbar/NavbarElements';
 
 
 export const ServicesContainer = styled.div`
+    background-color: ${({$lightBg})=>($lightBg ? '#f9f9f9': '#010606')};
     ${flexContainer};
+    flex-direction:column;
     height:800px;
-    background: #010606;
 
     @media (max-width: 768px){
         height: 1100px;
@@ -34,7 +35,8 @@ export const ServicesWrapper = styled.div`
 
 export const ServicesCard = styled.div`
     ${flexContainer};
-    flex-direction: flex-start;
+    flex-direction: column;
+    justify-content:space-around;
     background-color: #fff;
     border-radius: 10px;
     max-height: 340px;
@@ -51,4 +53,34 @@ export const ServicesCard = styled.div`
 `
 
 export const ServicesIcon = styled.img`
+    width: 160px;
+    margin-bottom: 10px;
+`
+
+export const ServicesH1 = styled.h1`
+    color: ${({ $lightText }) => ( !$lightText ? blackColor : '#fff')};
+    font-size: 2.5rem;
+    margin-bottom: 64px;
+
+    @media(max-width: 480px){
+        font-size: 2rem;
+    }
+`
+
+export const ServicesH2 = styled.h2`
+    color: ${({ $lightText }) => {
+        if (!$lightText){
+            return blackColor
+        } else {
+            return '#fff'
+        }}};
+    font-size: 1rem;
+    margin-bottom: 10px;
+`
+
+export const ServicesP = styled.p`
+    color: ${({ $lightText }) => ( !$lightText ? blackColor : '#fff')};
+    
+    font-size: 1rem;
+    text-align: center;
 `

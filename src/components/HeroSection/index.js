@@ -34,7 +34,7 @@ export const HeroSection = ({ img, alt }) => {
         <VideoBg autoPlay loop muted src={video} type="video/mp4"></VideoBg>
       </HeroBg>
       <HeroContent>
-
+ 
         <HeroRow>
           <HeroColumn1>
             <TextWrapper>

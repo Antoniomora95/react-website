@@ -13,7 +13,8 @@ background-color: ${({$lightBg})=>($lightBg ? '#f9f9f9': '#010606')};
 export const InfoWrapper = styled.div`
     ${flexContainer};
     z-index:1;
-    height:860px;
+    height:auto;
+    min-height: 800px;
     width:100%;
     max-width: 1100px;
     padding: 0 24px;

@@ -2,6 +2,8 @@ import styled, { css } from 'styled-components'
 import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
+export const blackColor = '#010606';
+
 
 export const flexContainer = css`
     display: flex;
