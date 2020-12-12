@@ -52,14 +52,14 @@ export const ServicesObj = {
     titleSection: 'My experience',
     cards: [
         {
-            icon: back_database,
-            iconAlt: 'backend dev',
+            icon: frontend,
+            iconAlt: 'frontend dev',
             title: 'Frontend development',
             paragraphText: 'Nearly 2 years working with Angular, JS ES6+, Typescript, CSS flexbox, grid, React (Hooks, router, styled components)'
         },
         {
-            icon: frontend,
-            iconAlt: 'frontend dev',
+            icon: back_database,
+            iconAlt: 'backend dev',
             title: 'Backend development',
             paragraphText: 'Experience in the develop of restful APIS using Node, express and MongoDB'
         },
@@ -70,4 +70,13 @@ export const ServicesObj = {
             paragraphText: 'Last year I worked in the develop of 2 mobile Apps using Ionic and Angular'
         }
     ]
+}
+
+export const footerObj = {
+    github: 'https://github.com/Antoniomora95',
+    facebook:'https://www.facebook.com/antmor95ASOT/',
+    twitter:'https://twitter.com/ANTONIOMORABAU1',
+    linkedin:'https://www.linkedin.com/in/antonio-mora-bautista-b02363133/',
+    instagram:'https://www.instagram.com/antoniomora.b/',
+    gmail:'mailto: morabautistaantonio@gmail.com'
 }

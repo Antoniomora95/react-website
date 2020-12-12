@@ -80,7 +80,6 @@ export const ServicesH2 = styled.h2`
 
 export const ServicesP = styled.p`
     color: ${({ $lightText }) => ( !$lightText ? blackColor : '#fff')};
-    
     font-size: 1rem;
     text-align: center;
 `
