@@ -1,4 +1,3 @@
-import developer  from '../../images/developer.svg';
 import back_database  from '../../images/database.svg';
 import version  from '../../images/version-control.svg';
 import freelancer  from '../../images/freelancer-ok.svg';
