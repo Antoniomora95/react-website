@@ -16,13 +16,14 @@ export const Services = ({
     id,
     lightBg,
     lightText,
+    lightTitle,
     titleSection,
     cards }) => {
 
     return (
         <>
             <ServicesContainer id={id} $lightBg={lightBg}>
-                <ServicesH1 $lightText={lightText}>{titleSection}</ServicesH1>
+                <ServicesH1 $lightTitle={lightTitle}>{titleSection}</ServicesH1>
                 <ServicesWrapper>
                     {
                         cards.map(card => {
@@ -32,7 +33,7 @@ export const Services = ({
                                 <ServicesH2 $lightText={lightText}>
                                     {title}
                                 </ServicesH2>
-                                <ServicesP>
+                                <ServicesP $lightText={lightText}>
                                     {paragraphText}
                                 </ServicesP>
                             </ServicesCard>

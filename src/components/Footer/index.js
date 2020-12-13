@@ -1,5 +1,5 @@
 import React from 'react';
-import { 
+import {
     FaFacebookSquare,
     FaLinkedin,
     FaTwitterSquare,
@@ -19,8 +19,10 @@ import {
     FooterLinkItem,
     FooterLink,
     FooterColCredits,
-    FooterCreditsText
-} from './FooterElements'
+    FooterCreditsText,
+    FooterColHome
+} from './FooterElements';
+import { NavLogoRoute } from '../Navbar/NavbarElements';
 export const Footer = ({
     github, facebook, instagram, twitter, linkedin, gmail
 }) => {
@@ -29,34 +31,34 @@ export const Footer = ({
             <FooterWrap>
                 <FooterColLinks>
                     <FooterLinksList>
-                    <FooterLinkItem>
+                        <FooterLinkItem>
                             <FooterLink href={github} >
-                                <FaGithub/>
+                                <FaGithub />
                             </FooterLink>
                         </FooterLinkItem>
 
                         <FooterLinkItem>
                             <FooterLink href={linkedin}>
-                                <FaLinkedin/>
+                                <FaLinkedin />
                             </FooterLink>
                         </FooterLinkItem>
 
                         <FooterLinkItem>
-                            <FooterLink  href={gmail}>
-                                <SiGmail/>
+                            <FooterLink href={gmail}>
+                                <SiGmail />
                             </FooterLink>
                         </FooterLinkItem>
 
                         <FooterLinkItem>
                             <FooterLink href={facebook}>
-                                <FaFacebookSquare/>
+                                <FaFacebookSquare />
                             </FooterLink>
                         </FooterLinkItem>
-                       
-                        
+
+
                         <FooterLinkItem>
                             <FooterLink href={twitter}>
-                                <FaTwitterSquare/>
+                                <FaTwitterSquare />
                             </FooterLink>
                         </FooterLinkItem>
                         <FooterLinkItem>
@@ -64,12 +66,16 @@ export const Footer = ({
                                 <FaInstagram />
                             </FooterLink>
                         </FooterLinkItem>
-                        
+
                     </FooterLinksList>
                 </FooterColLinks>
+
                 <FooterColCredits>
-                    <FooterCreditsText>Made with <FaRegHeart/> by @antoniobautista <FaCopyright/> 2020</FooterCreditsText>
+                    <FooterCreditsText>Made with <FaRegHeart /> by @antoniobautista <FaCopyright /> 2020</FooterCreditsText>
                 </FooterColCredits>
+                <FooterColHome>
+                    <NavLogoRoute to='/'>MORA</NavLogoRoute>
+                </FooterColHome>
             </FooterWrap>
         </FooterContainer>
     )

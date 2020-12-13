@@ -58,7 +58,7 @@ export const ServicesIcon = styled.img`
 `
 
 export const ServicesH1 = styled.h1`
-    color: ${({ $lightText }) => ( !$lightText ? blackColor : '#fff')};
+    color: ${({ $lightTitle }) => ( !$lightTitle ? blackColor : '#fff')};
     font-size: 2.5rem;
     margin-bottom: 64px;
 
