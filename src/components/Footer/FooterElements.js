@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-import { Link } from 'react-router-dom';
-import { flexContainer, NavLogoRoute } from '../Navbar/NavbarElements';
+import { flexContainer } from '../Navbar/NavbarElements';
 
 
 export const FooterContainer = styled.footer`
