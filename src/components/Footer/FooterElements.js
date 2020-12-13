@@ -16,7 +16,7 @@ export const FooterWrap = styled.div`
     // how css know what would be the value of 1fr?
     // 1.- if you have a width in the div that would be your 1fr
     // 2.- if you do not have a width, 1fr would be the biggest size of your grid elements
-    grid-template-columns: 2fr 1.3fr .7fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 'FooColLinks FooColCredits FooColHome';
     grid-gap: 15px; 
     padding: 20px 40px;

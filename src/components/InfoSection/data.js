@@ -47,8 +47,8 @@ export const homeObj = {
 
 export const ServicesObj = {
     id:'experience',
-    lightBg: false,
-    lightTitle: true,
+    lightBg: true,
+    lightTitle: false,
     lightText: false,
     titleSection: 'My experience',
     cards: [
