@@ -24,7 +24,7 @@ import {
 } from './FooterElements';
 import { NavLogoRoute } from '../Navbar/NavbarElements';
 export const Footer = ({
-    github, facebook, instagram, twitter, linkedin, gmail
+    github, facebook, instagram, twitter, linkedin, gmail, toogleHome
 }) => {
     return (
         <FooterContainer>
@@ -32,37 +32,37 @@ export const Footer = ({
                 <FooterColLinks>
                     <FooterLinksList>
                         <FooterLinkItem>
-                            <FooterLink href={github} >
+                            <FooterLink href={github} target="_blank" aria-label="Github">
                                 <FaGithub />
                             </FooterLink>
                         </FooterLinkItem>
 
                         <FooterLinkItem>
-                            <FooterLink href={linkedin}>
+                            <FooterLink href={linkedin} target="_blank" aria-label="Linkedin">
                                 <FaLinkedin />
                             </FooterLink>
                         </FooterLinkItem>
 
                         <FooterLinkItem>
-                            <FooterLink href={gmail}>
+                            <FooterLink href={gmail} target="_blank" aria-label="Gmail">
                                 <SiGmail />
                             </FooterLink>
                         </FooterLinkItem>
 
                         <FooterLinkItem>
-                            <FooterLink href={facebook}>
+                            <FooterLink href={facebook} target="_blank" aria-label="Facebook">
                                 <FaFacebookSquare />
                             </FooterLink>
                         </FooterLinkItem>
 
 
                         <FooterLinkItem>
-                            <FooterLink href={twitter}>
+                            <FooterLink href={twitter} target="_blank" aria-label="Twitter">
                                 <FaTwitterSquare />
                             </FooterLink>
                         </FooterLinkItem>
                         <FooterLinkItem>
-                            <FooterLink href={instagram}>
+                            <FooterLink href={instagram} target="_blank" aria-label="Instagram">
                                 <FaInstagram />
                             </FooterLink>
                         </FooterLinkItem>
@@ -74,7 +74,7 @@ export const Footer = ({
                     <FooterCreditsText>Made with <FaRegHeart /> by @antoniobautista <FaCopyright /> 2020</FooterCreditsText>
                 </FooterColCredits>
                 <FooterColHome>
-                    <NavLogoRoute to='/'>MORA</NavLogoRoute>
+                    <NavLogoRoute to='/' onClick={ toogleHome }>MORA</NavLogoRoute>
                 </FooterColHome>
             </FooterWrap>
         </FooterContainer>

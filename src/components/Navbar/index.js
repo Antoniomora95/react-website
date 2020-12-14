@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect }  from 'react';
 import { FaBars } from 'react-icons/fa';
 import {
     Nav,
@@ -11,27 +11,70 @@ import {
     NavBtnContainer,
 BtnRoute as NavBtnRoute } from './NavbarElements';
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, toogleHome }) => {
+    const [ scrollNav, setScrollNav ]  = useState(false);
+
+    const changeNav = () => {
+        if(window.scrollY >= 80){
+            setScrollNav(true);
+        } else {
+            setScrollNav(false);
+        }
+    }
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav)
+    }, [])
+    
     return (
         <>
-        <Nav>
+        <Nav scrollNav = {scrollNav}>
             <NavbarContainer>
-                <NavLogoRoute to='/'>MORA</NavLogoRoute>
+                <NavLogoRoute to='/' onClick={ toogleHome }>MORA</NavLogoRoute>
                 <MobileIcon onClick={ toggle }>
                     <FaBars/>
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLink to='about'>About</NavLink>
+                        <NavLink
+                        
+                        to='about'
+                        spy={true}
+                        smooth={true}
+                        offset={-80}
+                        duration={ 600 }
+                        delay={200}
+                        exact='true'>About</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to='technologies'>My code</NavLink>
+                        <NavLink
+                        
+                        to='mycode'
+                        spy={true}
+                        smooth={true}
+                        offset={-80}
+                        duration={600}
+                        delay={200}
+                        exact='true'>My code</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to='experience'>Experience</NavLink>
+                        <NavLink
+                        
+                        to='experience'
+                        spy={true}
+                        smooth={true}
+                        offset={-80}
+                        duration={600}
+                        exact='true'>Experience</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to='signup'>Sign Up</NavLink>
+                        <NavLink
+                        
+                        to='signup'
+                        spy={true}
+                        smooth={true}
+                        offset={-80}
+                        duration={600}
+                        exact='true'>Sign Up</NavLink>
                     </NavItem>
                 </NavMenu>
                 <NavBtnContainer>

@@ -19,8 +19,8 @@ export const paddingForContainer = css`
 
 
 export const Nav = styled.nav`
+    background-color: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
     ${flexContainer};
-    background: #000;
     height: 80px;
     font-size:1rem;
     position:sticky;
@@ -83,7 +83,7 @@ export const NavLink = styled(LinkScroll)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-    &:active{
+    &.active{
         border-bottom: 3px solid #01bf71;
     }
 `
