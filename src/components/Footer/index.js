@@ -24,7 +24,7 @@ import {
 } from './FooterElements';
 import { NavLogoRoute } from '../Navbar/NavbarElements';
 export const Footer = ({
-    github, facebook, instagram, twitter, linkedin, gmail
+    github, facebook, instagram, twitter, linkedin, gmail, toogleHome
 }) => {
     return (
         <FooterContainer>
@@ -74,7 +74,7 @@ export const Footer = ({
                     <FooterCreditsText>Made with <FaRegHeart /> by @antoniobautista <FaCopyright /> 2020</FooterCreditsText>
                 </FooterColCredits>
                 <FooterColHome>
-                    <NavLogoRoute to='/'>MORA</NavLogoRoute>
+                    <NavLogoRoute to='/' onClick={ toogleHome }>MORA</NavLogoRoute>
                 </FooterColHome>
             </FooterWrap>
         </FooterContainer>

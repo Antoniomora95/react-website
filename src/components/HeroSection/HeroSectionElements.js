@@ -3,35 +3,36 @@ import { flexContainer, paddingForContainer } from '../Navbar/NavbarElements'
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 import { Img, ImgWrap } from '../InfoSection/InfoElements'
 export const HeroContainer = styled.div`
-margin-top:80px;
-${flexContainer};
-${paddingForContainer};
-background-color: #0c0c0c;
-position: relative;
-z-index:1;
-height:auto;
-min-height: 800px;
-:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right:0;
-    bottom: 0;
-    left:0; 
-    background:
-    linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.6) 100%
-    ),
-    linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        transparent 100%);
-    z-index:2;
+    ${flexContainer};
+    ${paddingForContainer};
+    background-color: #0c0c0c;
+    position: relative;
+    z-index:1;
+    height:auto;
+    min-height: 870px;
+    margin-top: -80px;
+    :before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right:0;
+        bottom: 0;
+        left:0; 
+        background:
+        linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0.6) 100%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            transparent 100%);
+        z-index:2;
 
-}
-/*add before styles */
+    }
+    
+    /*add before styles */
 `
 export const HeroBg = styled.div`
 position: absolute;
@@ -103,6 +104,9 @@ export const ImgWrapProfile = styled(ImgWrap)`
     max-width:400px;
     overflow: hidden;
     border-radius: 5%;
+    @media (max-width: 768px){
+        display:none;
+    }
 `
 
 export const ImgProfile = styled(Img)`
@@ -114,7 +118,7 @@ export const ImgProfile = styled(Img)`
         transition-duration: 1.5s;
         transition-timing-function: linear;
         transition-delay: .2s;
-    }
+    }  
 `
 /*
 The transition-property
