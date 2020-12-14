@@ -19,6 +19,7 @@ export const paddingForContainer = css`
 
 
 export const Nav = styled.nav`
+    background-color: ${({$scrollNav}) => ($scrollNav ? '#000' : 'transparent')};
     ${flexContainer};
     background: #000;
     height: 80px;

@@ -3,6 +3,7 @@ import { flexContainer, paddingForContainer } from '../Navbar/NavbarElements'
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 import { Img, ImgWrap } from '../InfoSection/InfoElements'
 export const HeroContainer = styled.div`
+margin-top:80px;
 ${flexContainer};
 ${paddingForContainer};
 background-color: #0c0c0c;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState }  from 'react';
 import { FaBars } from 'react-icons/fa';
 import {
     Nav,
@@ -12,6 +12,7 @@ import {
 BtnRoute as NavBtnRoute } from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
+    const [ scrollNav, setScrollNav ]  = useState(false)
     return (
         <>
         <Nav>
@@ -25,7 +26,7 @@ const Navbar = ({ toggle }) => {
                         <NavLink to='about'>About</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to='technologies'>My code</NavLink>
+                        <NavLink to='mycode'>My code</NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink to='experience'>Experience</NavLink>

@@ -1,11 +1,9 @@
-import React from 'react'
-
+import React from 'react';
+import { Login } from '../components/signin/index';
 export const SigninPage = () => {
     return (
-        <>
-        <div>
-            loser
-        </div>
-        </>
+    <>
+    <Login></Login>
+    </>
     )
 }
