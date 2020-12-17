@@ -22,6 +22,7 @@ const Navbar = ({ toggle, toogleHome }) => {
         }
     }
     useEffect(() => {
+        console.log('run once, mounted');
         window.addEventListener('scroll', changeNav)
     }, [])
     
@@ -78,7 +79,7 @@ const Navbar = ({ toggle, toogleHome }) => {
                     </NavItem>
                 </NavMenu>
                 <NavBtnContainer>
-                    <NavBtnRoute to="/signin">Sign in</NavBtnRoute>
+    <NavBtnRoute to="signin" >Sign in </NavBtnRoute>
                 </NavBtnContainer>
             </NavbarContainer>
         </Nav>

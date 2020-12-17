@@ -2,21 +2,78 @@ import React from 'react'
 import {
     SigninContainer,
     SigninFormContainer,
-    SigninWrapper
+    SigninWrapper,
+    SigninFormWrapper,
+    SigninForm,
+    SigninFormTitle,
+    SigninInputContainer,
+    SigninInputLabel,
+    SigninInputField,
+    SigninInputSubmit,
+    ForgotPasswordLink
 } from './signinElements';
 
 export const Login = () => {
     return (
         <>
-        <SigninContainer>
+            <SigninContainer>
                 <SigninWrapper>
-                <SigninFormContainer>
-                    this is a test
-                    SigninFormContainer
-                </SigninFormContainer>
-                
+                    <SigninFormContainer>
+                        <SigninFormWrapper>
+                        <SigninForm>
+                            <SigninFormTitle>Sign in to your account</SigninFormTitle>
+                            <SigninInputContainer>
+                                <SigninInputLabel htmlFor='email'>
+                                    Email
+                                </SigninInputLabel>
+                                <SigninInputField type='email' name='email'>
+
+                                </SigninInputField>
+                            </SigninInputContainer>
+
+                            <SigninInputContainer>
+                                <SigninInputLabel htmlFor='password'>
+                                    Password
+                                </SigninInputLabel>
+                                <SigninInputField type='password' name='password'>
+
+                                </SigninInputField>
+                            </SigninInputContainer>
+                            <SigninInputContainer>
+                                <SigninInputSubmit type='submit'>
+
+                                </SigninInputSubmit>
+                            </SigninInputContainer>
+                            <ForgotPasswordLink>Forgot Password</ForgotPasswordLink>
+                        </SigninForm>
+                        </SigninFormWrapper>
+                    </SigninFormContainer>
+
                 </SigninWrapper>
             </SigninContainer>
         </>
     )
 }
+
+/*
+THIS EXLPLAIN THE CLEANUP FN IN EFFECT
+function returnsCleanupFn(){
+    let available = true;
+    setTimeout( () => {
+        if(available){
+            console.log('state was updated');
+        } else {
+            console.log('upss component is not available');
+        }
+    }, 4000);
+
+    return () => available = !available
+}
+
+
+undefined
+returnsCleanupFn()()
+false
+
+
+*/
