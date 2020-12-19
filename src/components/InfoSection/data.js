@@ -22,6 +22,7 @@ export const homeObj2 = {
     imgStart: true,
     img: freelancer,
     alt:'experience',
+    url: 'https://www.linkedin.com/in/antonio-mora-bautista-b02363133/',
     primaryColorBtn: false,
     primaryButton: true,
     darkText: true
@@ -39,6 +40,7 @@ export const homeObj = {
     imgStart: false,
     img: version,
     alt:'my github',
+    url:'https://github.com/Antoniomora95',
     primaryColorBtn: false,
     primaryButton: true,
 }

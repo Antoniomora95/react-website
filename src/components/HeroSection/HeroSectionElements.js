@@ -101,7 +101,7 @@ font-size: 20px;
 `
 export const ImgWrapProfile = styled(ImgWrap)`
     margin:auto;
-    max-width:400px;
+    max-width:330px;
     overflow: hidden;
     border-radius: 5%;
     @media (max-width: 768px){

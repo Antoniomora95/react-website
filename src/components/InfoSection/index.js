@@ -26,6 +26,7 @@ export const InfoSection = ({
     headLine,
     description,
     buttonLabel,
+    url,
     img,
     alt }) => {
     return (
@@ -40,13 +41,9 @@ export const InfoSection = ({
                             <Heading $lightText={lightText}>{headLine}</Heading>
                             <Subtitle $lightText={lightText}>{description}</Subtitle>
                             <BtnWrap>
-                                <Button to='home'
+                                <Button
+                                    href={url}
                                     $primary={primaryButton}
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
                                     $primaryColor={primaryColorBtn}
                                     $bgDark={!lightBg}
                                 >{buttonLabel}</Button>

@@ -27,7 +27,7 @@ export const Footer = ({
     github, facebook, instagram, twitter, linkedin, gmail, toogleHome
 }) => {
     return (
-        <FooterContainer>
+        <FooterContainer id="contact">
             <FooterWrap>
                 <FooterColLinks>
                     <FooterLinksList>

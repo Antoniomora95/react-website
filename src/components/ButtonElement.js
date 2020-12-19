@@ -1,9 +1,7 @@
 import styled from 'styled-components'
-
-import {Link as linkScroll } from 'react-scroll'
 import { flexContainer } from './Navbar/NavbarElements'
 
-export const Button = styled(linkScroll)`
+export const Button = styled.a`
 border-radius: 50px;
 background: ${({$primary}) => ($primary ? '#01bf71': '#010606')};
 white-space: nowrap;
@@ -12,6 +10,7 @@ color: ${({$primaryColor}) => ( $primaryColor ? '#01bf71' : '#010606')};
 font-size : ${({fontBig}) => (fontBig ? '20px' : '16px')};
 outline: none;
 border: none;
+text-decoration: none;
 cursor: pointer;
 ${flexContainer};
 

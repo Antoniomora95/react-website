@@ -11,7 +11,7 @@ import {
     NavBtnContainer,
 BtnRoute as NavBtnRoute } from './NavbarElements';
 
-const Navbar = ({ toggle, toogleHome }) => {
+export const Navbar = ({ toggle, toogleHome }) => {
     const [ scrollNav, setScrollNav ]  = useState(false);
 
     const changeNav = () => {
@@ -22,7 +22,14 @@ const Navbar = ({ toggle, toogleHome }) => {
         }
     }
     useEffect(() => {
-        window.addEventListener('scroll', changeNav)
+        let isRendered = true;
+        if(isRendered){
+            window.addEventListener('scroll', changeNav);
+        }
+        return () => {
+            isRendered = false;
+        }
+        
     }, [])
     
     return (
@@ -69,16 +76,16 @@ const Navbar = ({ toggle, toogleHome }) => {
                     <NavItem>
                         <NavLink
                         
-                        to='signup'
+                        to='resume'
                         spy={true}
                         smooth={true}
                         offset={-80}
                         duration={600}
-                        exact='true'>Sign Up</NavLink>
+                        exact='true'>Resume</NavLink>
                     </NavItem>
                 </NavMenu>
                 <NavBtnContainer>
-                    <NavBtnRoute to="/signin">Sign in</NavBtnRoute>
+    <NavBtnRoute to="signin" >Sign in </NavBtnRoute>
                 </NavBtnContainer>
             </NavbarContainer>
         </Nav>
