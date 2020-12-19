@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Nav } from '../Navbar/NavbarElements';
 import { flexContainer } from '../Navbar/NavbarElements';
 
 export const SigninContainer = styled.div`
@@ -6,6 +7,13 @@ export const SigninContainer = styled.div`
     height: 100%;
     height:100vh;
     background-color: #01bf71;
+`
+// nav
+export const NavSignin = styled(Nav)`
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    justify-content: start;
 `
 export const SigninWrapper = styled.div`
     //I will use the same variable in all the wrappers
@@ -16,19 +24,15 @@ export const SigninWrapper = styled.div`
 export const SigninFormContainer = styled.div`
     ${flexContainer}
     background-color: black;
+    padding: 2.5rem 2.8rem;
     border-radius: 5px;
     width:380px;
-    height:450px;
     @media(max-width:420px){
         width:95%;
     }
 `
-export const SigninFormWrapper = styled.div`
-    width:100%;
-    padding: 2.5rem 2.8rem;
-`
 export const SigninForm = styled.form`
-    
+    width:100%;
 `
 export const SigninFormTitle = styled.h3`
     text-align:center;

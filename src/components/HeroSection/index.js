@@ -13,6 +13,7 @@ import {
   ImgProfile,
   ImgWrapProfile
 } from "./HeroSectionElements";
+import { footerObj } from '../InfoSection/data'
 import {
   InfoRow as HeroRow,
   Column1 as HeroColumn1,
@@ -23,6 +24,7 @@ import {
 import { Button } from "../ButtonElement";
 
 export const HeroSection = ({ img, alt }) => {
+  const { gmail } = footerObj;
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
@@ -34,7 +36,7 @@ export const HeroSection = ({ img, alt }) => {
         <VideoBg autoPlay loop muted src={video} type="video/mp4"></VideoBg>
       </HeroBg>
       <HeroContent>
- 
+
         <HeroRow>
           <HeroColumn1>
             <TextWrapper>
@@ -46,7 +48,8 @@ export const HeroSection = ({ img, alt }) => {
               </HeroP>
               <HeroBtnWrapper>
                 <Button
-                  to="signup"
+                  href={gmail}
+                  spy={true}
                   onMouseEnter={onHover}
                   onMouseLeave={onHover}
                   $primary={true}

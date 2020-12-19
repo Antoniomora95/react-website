@@ -2,8 +2,8 @@ import React from 'react'
 import {
     SigninContainer,
     SigninFormContainer,
+    NavSignin,
     SigninWrapper,
-    SigninFormWrapper,
     SigninForm,
     SigninFormTitle,
     SigninInputContainer,
@@ -12,14 +12,17 @@ import {
     SigninInputSubmit,
     ForgotPasswordLink
 } from './signinElements';
+import { NavLogoRoute } from '../Navbar/NavbarElements'
 
 export const Login = () => {
     return (
         <>
             <SigninContainer>
+                <NavSignin>
+                    <NavLogoRoute to='/'>MORA</NavLogoRoute>
+                </NavSignin>
                 <SigninWrapper>
                     <SigninFormContainer>
-                        <SigninFormWrapper>
                         <SigninForm>
                             <SigninFormTitle>Sign in to your account</SigninFormTitle>
                             <SigninInputContainer>
@@ -46,7 +49,7 @@ export const Login = () => {
                             </SigninInputContainer>
                             <ForgotPasswordLink>Forgot Password</ForgotPasswordLink>
                         </SigninForm>
-                        </SigninFormWrapper>
+                      
                     </SigninFormContainer>
 
                 </SigninWrapper>
